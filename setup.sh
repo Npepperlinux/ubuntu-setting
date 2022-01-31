@@ -14,9 +14,11 @@ sudo apt install -y darktable
 sudo apt install -y cpu-x
 sudo apt install -y inkscape
 sudo apt install -y solaar
-
+sudo apt install -y scrcpy
 sudo add-apt-repository universal
+sudo add-apt-repository ppa:phoerious/keepassxc
 sudo apt update
-sudo apt install vlc
+sudo apt install -y vlc
+sudo apt install -y keepassxc
 
 sudo apt remove eog
