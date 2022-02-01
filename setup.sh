@@ -20,5 +20,7 @@ sudo add-apt-repository ppa:phoerious/keepassxc
 sudo apt update
 sudo apt install -y vlc
 sudo apt install -y keepassxc
+mkdir ~/.config/vivaldi-snapshot/NativeMessagingHosts
+cp ~/ubuntu-setting/org.keepassxc.keepassxc_browser.json ~/.config/vivaldi-snapshot/NativeMessagingHosts/
 
 sudo apt remove eog
