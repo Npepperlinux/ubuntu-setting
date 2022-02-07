@@ -4,8 +4,8 @@ LANG=C xdg-user-dirs-gtk-update
 sudo apt remove -y eog firefox
 sudo apt autoremove
 
-sudo apt install -y gnome-shell-extension-prefs 
-sudo apt install -y chrome-gnome-shell gnome-shell-extension-prefs 
+sudo apt install -y chrome-gnome-shell gnome-shell-extension-prefs
+sudo apt install -y gnome-shell-extension-caffeine
 sudo apt install -y dash
 sudo apt install -y vivaldi-snapshot
 sudo apt install -y microsoft-edge-dev
