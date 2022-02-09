@@ -23,6 +23,7 @@ sudo apt install -y cpu-x
 sudo apt install -y inkscape
 sudo apt install -y solaar
 sudo apt install -y scrcpy
+sudo apt install -y gnome-clocks
 sudo add-apt-repository universal
 sudo add-apt-repository ppa:phoerious/keepassxc
 sudo add-apt-repository ppa:obsproject/obs-studio
