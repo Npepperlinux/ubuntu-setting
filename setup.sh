@@ -4,6 +4,18 @@ LANG=C xdg-user-dirs-gtk-update
 sudo apt remove -y eog firefox
 sudo apt autoremove
 
+# Add Vivaldi repo
+wget -qO- https://repo.vivaldi.com/archive/linux_signing_key.pub | sudo apt-key add -
+sudo add-apt-repository 'deb [arch=amd64] https://repo.vivaldi.com/archive/deb/ stable main'
+# Add Microsoft Edge repo
+curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
+sudo install -o root -g root -m 644 microsoft.gpg /etc/apt/trusted.gpg.d/
+sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/edge stable main" > /etc/apt/sources.list.d/microsoft-edge-dev.list'
+sudo rm microsoft.gpg
+# Add Chrone repo
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main"'
+
 sudo apt install -y chrome-gnome-shell gnome-shell-extension-prefs
 sudo apt install -y gnome-shell-extension-caffeine
 sudo apt install -y dash
