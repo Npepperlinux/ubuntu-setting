@@ -1,7 +1,7 @@
 #!/bin/sh
 LANG=C xdg-user-dirs-gtk-update
 
-sudo apt remove -y eog firefox
+sudo apt remove -y eog
 sudo apt autoremove
 
 # Add Vivaldi repo
