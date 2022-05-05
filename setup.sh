@@ -1,8 +1,10 @@
 #!/bin/sh
 LANG=C xdg-user-dirs-gtk-update
 
-sudo apt remove -y eog
-sudo apt autoremove
+# sudo apt remove -y eog
+# sudo apt autoremove
+
+sudo apt install -y curl
 
 # Add Vivaldi repo
 wget -qO- https://repo.vivaldi.com/archive/linux_signing_key.pub | sudo apt-key add -
@@ -46,6 +48,7 @@ sudo apt install -y gnome-clocks
 sudo apt install -y vlc
 sudo apt install -y keepassxc
 sudo apt install -y obs-studio
+sudo apt install -y exiftool
 
-mkdir ~/.config/vivaldi-snapshot/NativeMessagingHosts
+mkdir -p ~/.config/vivaldi-snapshot/NativeMessagingHosts
 cp ~/ubuntu-setting/org.keepassxc.keepassxc_browser.json ~/.config/vivaldi-snapshot/NativeMessagingHosts/
