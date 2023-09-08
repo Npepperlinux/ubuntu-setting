@@ -32,5 +32,9 @@ sudo snap install libreoffice
 sudo snap install code
 sudo snap install spotify
 
+curl -o /usr/local/bin/linphone -L $(curl -s https://download.linphone.org/releases/linux/RELEASE | cut -f 2) && chmod a+x /usr/local/bin/linphone
+
+# Setup KeePassXC with Vivaldi Snapshot
+
 mkdir -p ~/.config/vivaldi-snapshot/NativeMessagingHosts
 cp ~/ubuntu-setting/org.keepassxc.keepassxc_browser.json ~/.config/vivaldi-snapshot/NativeMessagingHosts/
